@@ -190,8 +190,7 @@ One of the significant limitations of VP8/VP9 alpha modes is their lack of suppo
 - **Color Specificity:** The chroma key removal is optimized for the specified `keyColor`. Using colors similar to the subject may result in unintended background removal.
 
 ## Demo
-
-<!-- *Include a link to a live demo or screenshots showcasing the component in action.* -->
+### [See live demo](https://aqaddora.github.io/react-chroma-key-video/)
 ![ChromaKeyVideo Demo](./media/showcase.gif)
 
 ## Contributing

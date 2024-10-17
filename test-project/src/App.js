@@ -12,7 +12,7 @@ function App() {
         <div className="video-container visible">
           <div className="video-wrapper">
             <video
-              src="/test.mp4"
+              src={window.location.origin + '/test.mp4'}
               muted
               autoPlay
               loop
@@ -25,7 +25,7 @@ function App() {
           </div>
           <div className="video-wrapper">
             <ChromaKeyVideo
-              videoSrc="/test.mp4"
+              videoSrc={window.location.origin + '/test.mp4'}
               width={1920}
               height={1080}
               threshold={0.2}
