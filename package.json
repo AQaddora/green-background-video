@@ -1,0 +1,31 @@
+{
+  "name": "react-chroma-key-video",
+  "version": "1.0.0",
+  "description": "A React component that plays videos with green chroma key removal and glow effects using WebGL.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.x.x",
+    "@babel/plugin-transform-runtime": "^7.x.x",
+    "@babel/preset-env": "^7.x.x",
+    "@babel/preset-react": "^7.x.x",
+    "@rollup/plugin-babel": "^5.x.x",
+    "@rollup/plugin-commonjs": "^21.x.x",
+    "@rollup/plugin-node-resolve": "^13.x.x",
+    "rollup": "^2.x.x",
+    "rollup-plugin-peer-deps-external": "^2.x.x"
+  },
+  "keywords": ["react", "video", "shader", "webgl", "component", "greenscreen"],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT"
+}
