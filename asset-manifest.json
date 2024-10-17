@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-chroma-key-video/test-project/static/css/main.e6580397.css",
+    "main.js": "/react-chroma-key-video/test-project/static/js/main.cc0aea93.js",
+    "static/js/453.1abec725.chunk.js": "/react-chroma-key-video/test-project/static/js/453.1abec725.chunk.js",
+    "index.html": "/react-chroma-key-video/test-project/index.html",
+    "main.e6580397.css.map": "/react-chroma-key-video/test-project/static/css/main.e6580397.css.map",
+    "main.cc0aea93.js.map": "/react-chroma-key-video/test-project/static/js/main.cc0aea93.js.map",
+    "453.1abec725.chunk.js.map": "/react-chroma-key-video/test-project/static/js/453.1abec725.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6580397.css",
+    "static/js/main.cc0aea93.js"
+  ]
+}
