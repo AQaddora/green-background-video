@@ -191,9 +191,8 @@ One of the significant limitations of VP8/VP9 alpha modes is their lack of suppo
 
 ## Demo
 
-*Include a link to a live demo or screenshots showcasing the component in action.*
-
-<!-- ![ChromaKeyVideo Demo](./demo-screenshot.png) -->
+<!-- *Include a link to a live demo or screenshots showcasing the component in action.* -->
+![ChromaKeyVideo Demo](./media/showcase.gif)
 
 ## Contributing
 
