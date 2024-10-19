@@ -1,26 +1,8 @@
 # ChromaKeyVideo
 
-A React component that plays videos with green chroma key removal, allowing for dynamic background replacement. Utilizing WebGL for efficient processing, this component ensures lower file sizes without relying on VP8 or VP9 alpha modes, providing broad compatibility across platforms, including iOS where Safari doesn't support these alpha modes.
+A React component that plays videos with green chroma key removal, allowing for dynamic background replacement. Utilizing WebGL for efficient real-time processing, this component applies a fragment shader to each video frame, removing a specified key color (such as green) and making it transparent. By rendering frames directly on an HTML <canvas>, this approach bypasses the need for heavier video formats like VP8 or VP9 with alpha channels, ensuring smaller file sizes and broader compatibility across platforms, including iOS where Safari doesn't support alpha modes in videos. The shader-based chroma keying provides fine-tuned control over color thresholds, allowing for smooth transitions between transparent and visible areas in the video.
 
-## Table of Contents
-
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Props](#props)
-- [Why Choose ChromaKeyVideo?](#why-choose-ChromaKeyVideo)
-- [Limitations](#limitations)
-- [Demo](#demo)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Features
-
-- **Chroma Key Removal:** Eliminates specified colored backgrounds from videos, enabling seamless background replacement.
-- **WebGL Integration:** Utilizes WebGL shaders for efficient video processing directly in the browser.
-- **Low File Size:** Achieves background removal without relying on VP8 or VP9 alpha modes, resulting in smaller video file sizes.
-- **Cross-Platform Compatibility:** Works on all major browsers including iOS Safari, which doesn't support VP8/VP9 alpha modes.
-- **Customizable:** Offers various props to fine-tune the chroma key removal and video display according to your needs.
+![ChromaKeyVideo Demo](./media/showcase.gif)
 
 ## Installation
 
@@ -41,35 +23,38 @@ yarn add react-chroma-key-video
 Import and use the `ChromaKeyVideo` component in your React application:
 
 ```jsx
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import ChromaKeyVideo from 'react-chroma-key-video';
-
 const App = () => (
   <div>
     <ChromaKeyVideo 
-      videoSrc="/test.mp4" 
-      width={400} 
-      height={400} 
-      threshold={0.4}
-      suppressionRange={0.1}
-      transitionRange={0.08}
-      keyColor={'#00ff00'}
-      className="my-custom-class"
-      style={{ border: '2px solid #000' }}
+      videoSrc="your-video-path-or-url" // Path to the video file that will be used for the chroma key effect.
+      width={400} // The width of the video element in pixels.
+      height={400} // The height of the video element in pixels.
+      threshold={0.4} // The threshold value used for the chroma key effect, controlling how similar the key color should be to be considered transparent.
+      suppressionRange={0.1} // The range for suppressing the key color's effect, useful for refining the chroma key.
+      transitionRange={0.08} // The range over which the transition occurs from fully visible to fully transparent.
+      keyColor={'#00ff00'} // The color that should be removed (transparent) in the video, typically used for green screen (chroma keying).
+      className="my-custom-class" // A custom CSS class name to apply additional styling to the video element.
+      style={{ border: '2px solid #000' }} // Inline style applied to the video element, in this case adding a border.
     />
   </div>
 );
-
-const container = document.getElementById('root');
-const root = ReactDOM.createRoot(container);
-root.render(<App />);
 ```
 
 **Notes:**
 
-- Ensure that your video file (`test2.mp4` in this example) is correctly placed in the public directory or accessible via the specified `videoSrc` path.
+- Ensure that you replace the `your-video-path-or-url` with your video.
 - The `className` and `style` props allow you to apply custom styles to the `<canvas>` element.
+
+## Demo
+### [See live demo](https://aqaddora.github.io/react-chroma-key-video/)
+
+## Features
+
+- **Chroma Key Removal:** Eliminates specified colored backgrounds from videos, enabling seamless background replacement.
+- **WebGL Integration:** Utilizes WebGL shaders for efficient video processing directly in the browser.
+- **Low File Size:** Achieves background removal without relying on VP8 or VP9 alpha modes, resulting in smaller video file sizes.
+- **Cross-Platform Compatibility:** Works on all major browsers including iOS Safari, which doesn't support VP8/VP9 alpha modes.
+- **Customizable:** Offers various props to fine-tune the chroma key removal and video display according to your needs.
 
 ## Props
 
@@ -189,10 +174,6 @@ One of the significant limitations of VP8/VP9 alpha modes is their lack of suppo
 - **Performance Considerations:** Processing videos with WebGL shaders can be resource-intensive. It's recommended to use this component judiciously within your application, enabling it only when necessary to ensure smooth performance, especially on devices with limited processing capabilities.
 - **Color Specificity:** The chroma key removal is optimized for the specified `keyColor`. Using colors similar to the subject may result in unintended background removal.
 
-## Demo
-### [See live demo](https://aqaddora.github.io/react-chroma-key-video/)
-![ChromaKeyVideo Demo](./media/showcase.gif)
-
 ## Contributing
 
 Contributions are welcome! Please follow these steps to contribute:
@@ -231,3 +212,14 @@ Contributions are welcome! Please follow these steps to contribute:
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Demo](#demo)
+- [Features](#features)
+- [Props](#props)
+- [Why Choose ChromaKeyVideo?](#why-choose-ChromaKeyVideo)
+- [Limitations](#limitations)
+- [Contributing](#contributing)
+- [License](#license)
