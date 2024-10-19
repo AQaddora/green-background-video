@@ -48,6 +48,15 @@ const App = () => (
 ## Demo
 ### [See live demo](https://aqaddora.github.io/react-chroma-key-video/)
 
+## Changelog
+
+### [1.0.1] - 2023-10-20
+- Updated documentation in `README.md` to reflect the new changes.
+
+### [1.0.0] - 2023-10-19 
+- Initial release of the component with chroma key video support.
+
+
 ## Features
 
 - **Chroma Key Removal:** Eliminates specified colored backgrounds from videos, enabling seamless background replacement.
