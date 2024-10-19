@@ -146,9 +146,7 @@ var ChromaKeyVideo = function ChromaKeyVideo(_ref) {
     width: width,
     height: height,
     className: className,
-    style: {
-      style: style
-    }
+    style: style
   }), /*#__PURE__*/React.createElement("video", {
     ref: videoRef,
     src: videoSrc,

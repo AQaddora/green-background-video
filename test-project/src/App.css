@@ -6,7 +6,14 @@
 
 body {
   overflow: hidden;
+  user-select: none;
 }
+
+p {
+  margin-bottom: 70px;
+  font-weight: bold;
+}
+
 h1 {
   margin-bottom: 40px;
 }
@@ -32,6 +39,7 @@ h1 {
   height: auto; /* Maintains aspect ratio */
   border-radius: 8px; /* Optional: Adds rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow */
+  cursor: pointer;
 }
 
 .video-wrapper p {
@@ -39,6 +47,7 @@ h1 {
   width: 500px;
   height: auto;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .video-container,
@@ -71,9 +80,17 @@ button {
   cursor: pointer;
 }
 
+video{
+  height: 281.5px;
+}
+
 @media screen and (max-width: 1100px) {
+  video{
+    height: 196.88px;
+  }
+
   .video-container {
-    gap: 20px;
+    gap: 50px;
   }
 
   .video-wrapper p {
@@ -83,5 +100,4 @@ button {
   button {
     width: 200px;
   }
-  
 }

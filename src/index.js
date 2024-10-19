@@ -176,7 +176,7 @@ const ChromaKeyVideo = ({ videoSrc, width = 1080, height = 1080, keyColor = '#00
                 width={width}
                 height={height}
                 className={className}
-                style={{ style }}
+                style={ style }
             ></canvas>
             <video
                 ref={videoRef}

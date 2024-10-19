@@ -176,6 +176,9 @@ One of the significant limitations of VP8/VP9 alpha modes is their lack of suppo
 
 ## Changelog
 
+### [1.0.3] - 2024-10-19
+- Fixed passed style to the component
+
 ### [1.0.2] - 2024-10-19
 - Updated documentation to show gif.
 

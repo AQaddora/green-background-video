@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2024-10-19
+
+### Fixed
+
+- passing style to the component correctly
+
+
 ## [1.0.2] - 2024-10-19
 
 ### Changed

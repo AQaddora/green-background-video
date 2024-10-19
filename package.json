@@ -1,6 +1,6 @@
 {
   "name": "react-chroma-key-video",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React component that plays videos with a specified chroma key (default: green) removal using WebGL.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
