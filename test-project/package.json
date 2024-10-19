@@ -1,6 +1,6 @@
 {
   "name": "chroma-key-test",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "homepage": "https://aqaddora.github.io/react-chroma-key-video",
   "dependencies": {
@@ -8,7 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
-    "react-chroma-key-video": "file:../react-chroma-key-video-1.0.2.tgz",
+    "react-chroma-key-video": "^1.0.3",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"

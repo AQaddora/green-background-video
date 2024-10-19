@@ -28,7 +28,7 @@ function App() {
                 width="1920"
                 height="1080"
                 style={{
-                  filter: isGlowingVideo ? 'drop-shadow(0 0 15px #ff6b6b)  drop-shadow(0 0 20px #ff6b6b)' : 'none',
+                  filter: isGlowingVideo ? 'drop-shadow(0 0 10px #ff6b6b)' : 'none',
                 }}
               />
               <p>Regular Video</p>
@@ -48,12 +48,13 @@ function App() {
                 keyColor="#00ff00" // Hex color
                 className="chroma-key-video"
                 style={{
-                  filter: isGlowingCanvas ? 'drop-shadow(0 0 15px #ff6b6b)  drop-shadow(0 0 20px #ff6b6b)' : 'none',
+                  filter: isGlowingCanvas ? 'drop-shadow(0 0 10px #ff6b6b)' : 'none',
                 }}
               />
               <p>Chroma Key Video</p>
             </div>
           </div>
+
         </>
       ) : (
         <div className="button-container visible">

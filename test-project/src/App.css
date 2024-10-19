@@ -5,7 +5,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   user-select: none;
 }
 
@@ -90,7 +90,7 @@ video{
   }
 
   .video-container {
-    gap: 50px;
+    gap: 20px;
   }
 
   .video-wrapper p {
