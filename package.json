@@ -1,11 +1,12 @@
 {
   "name": "react-chroma-key-video",
-  "version": "1.0.0",
-  "description": "A React component that plays videos with green chroma key removal and glow effects using WebGL.",
+  "version": "1.0.1",
+  "description": "A React component that plays videos with a specified chroma key (default: green) removal using WebGL.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "files": [
-    "dist"
+    "dist",
+    "media"
   ],
   "scripts": {
     "build": "rollup -c"

@@ -3,3 +3,4 @@ rollup.config.js
 .babelrc
 .gitignore
 chroma-key-test
+test-project

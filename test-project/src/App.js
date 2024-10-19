@@ -12,20 +12,21 @@ function App() {
         <div className="video-container visible">
           <div className="video-wrapper">
             <video
-              src={window.location.origin + '/test.mp4'}
+              src={process.env.PUBLIC_URL + '/test.mp4'}
               muted
               autoPlay
               loop
+              crossOrigin='anonymous'
               playsInline
               width="1920"
               height="1080"
-              style={{ border: '2px solid #ccc' }}
+              style={{ height:'281.5px' }}
             />
-            <p>Regular Video</p>
+            <p className='p'>Regular Video</p>
           </div>
           <div className="video-wrapper">
             <ChromaKeyVideo
-              videoSrc={window.location.origin + '/test.mp4'}
+              videoSrc={process.env.PUBLIC_URL + '/test.mp4'}
               width={1920}
               height={1080}
               threshold={0.2}
