@@ -2,13 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.1] - 2023-10-20
+## [1.0.2] - 2024-10-19
+
+### Changed
+
+- Updated documentation to show gif.
+
+## [1.0.1] - 2024-10-19
 
 ### Changed
 
 - Updated documentation in `README.md` to reflect the new changes.
 
-## [1.0.0] - 2023-10-19
+## [1.0.0] - 2024-10-19
 
 ### Added
 

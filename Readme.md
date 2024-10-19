@@ -2,7 +2,7 @@
 
 A React component that plays videos with green chroma key removal, allowing for dynamic background replacement. Utilizing WebGL for efficient real-time processing, this component applies a fragment shader to each video frame, removing a specified key color (such as green) and making it transparent. By rendering frames directly on an HTML <canvas>, this approach bypasses the need for heavier video formats like VP8 or VP9 with alpha channels, ensuring smaller file sizes and broader compatibility across platforms, including iOS where Safari doesn't support alpha modes in videos. The shader-based chroma keying provides fine-tuned control over color thresholds, allowing for smooth transitions between transparent and visible areas in the video.
 
-![ChromaKeyVideo Demo](./media/showcase.gif)
+![ChromaKeyVideo Demo](https://raw.githubusercontent.com/AQaddora/react-chroma-key-video/refs/heads/main/media/showcase.gif)
 
 ## Installation
 
@@ -47,15 +47,6 @@ const App = () => (
 
 ## Demo
 ### [See live demo](https://aqaddora.github.io/react-chroma-key-video/)
-
-## Changelog
-
-### [1.0.1] - 2023-10-20
-- Updated documentation in `README.md` to reflect the new changes.
-
-### [1.0.0] - 2023-10-19 
-- Initial release of the component with chroma key video support.
-
 
 ## Features
 
@@ -183,6 +174,19 @@ One of the significant limitations of VP8/VP9 alpha modes is their lack of suppo
 - **Performance Considerations:** Processing videos with WebGL shaders can be resource-intensive. It's recommended to use this component judiciously within your application, enabling it only when necessary to ensure smooth performance, especially on devices with limited processing capabilities.
 - **Color Specificity:** The chroma key removal is optimized for the specified `keyColor`. Using colors similar to the subject may result in unintended background removal.
 
+## Changelog
+
+### [1.0.2] - 2024-10-19
+- Updated documentation to show gif.
+
+### [1.0.1] - 2024-10-19
+- Updated documentation in `README.md` to reflect the new changes.
+
+### [1.0.0] - 2024-10-19
+- Initial release of the component with chroma key video support.
+
+
+
 ## Contributing
 
 Contributions are welcome! Please follow these steps to contribute:
@@ -230,5 +234,6 @@ This project is licensed under the [MIT License](./LICENSE).
 - [Props](#props)
 - [Why Choose ChromaKeyVideo?](#why-choose-ChromaKeyVideo)
 - [Limitations](#limitations)
+- [ChangeLog](#changelog)
 - [Contributing](#contributing)
 - [License](#license)
