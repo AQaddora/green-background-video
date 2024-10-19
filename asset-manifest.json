@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-chroma-key-video/static/css/main.b1b9945d.css",
-    "main.js": "/react-chroma-key-video/static/js/main.36f7cee8.js",
+    "main.js": "/react-chroma-key-video/static/js/main.8ca01b17.js",
     "static/js/453.1abec725.chunk.js": "/react-chroma-key-video/static/js/453.1abec725.chunk.js",
     "index.html": "/react-chroma-key-video/index.html",
     "main.b1b9945d.css.map": "/react-chroma-key-video/static/css/main.b1b9945d.css.map",
-    "main.36f7cee8.js.map": "/react-chroma-key-video/static/js/main.36f7cee8.js.map",
+    "main.8ca01b17.js.map": "/react-chroma-key-video/static/js/main.8ca01b17.js.map",
     "453.1abec725.chunk.js.map": "/react-chroma-key-video/static/js/453.1abec725.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b1b9945d.css",
-    "static/js/main.36f7cee8.js"
+    "static/js/main.8ca01b17.js"
   ]
 }
